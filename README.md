@@ -84,11 +84,11 @@ showCountrySelectorBottomSheet(
 
 ## Dmonstraction of CountrySelectorWidget
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif)
+!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
 
 ## Dmonstraction of showCountrySelectorBottomSheet
 
-!["showCountrySelectorBottomSheet - SelectedLocale.en"](example/demo_gifs/showCountrySelectorBottomSheet.gif)
+!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
 
 ## MIT License
 
