@@ -22,22 +22,27 @@ To see examples of the following animations on a device or simulator:
 ```bash
 cd example/
 flutter run
+```
 
 ## Usage
+
 To use this plugin, add `country_selector_widget` as a [dependency in your pubspec.yaml file].
 
 ### Examples
+
 Here are the examples that show you how to use the CountrySelectorWidget and showCountrySelectorBottomSheet.
 
 #### Usage of CountrySelectorWidget
+
 - the default locale is SelectedLocale.en, you would change to SelectedLocale.zhCH or SelectedLocale.zhHK
 - once the country is selected and clicked the continue btn it will trigger the valueChangedCallback called onSelectedCountry and return the Country
+
 ```dart
 CountrySelectorWidget(
     onSelectedCountry: (Country country) async {
         // selected country callback 
     },
-),
+)
 ```
 
 #### Usage of showCountrySelectorBottomSheet
@@ -82,13 +87,25 @@ showCountrySelectorBottomSheet(
 | `textFieldborderRadius` | Uses to determine borderRadius of `TextField` |
 | `continueBtnRadius` | Uses to determine borderRadius of Continue Button |
 
-## Dmonstraction of CountrySelectorWidget
+## Dmonstraction of CountrySelectorWidget - Flutter Web
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif)
+!["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
 
-## Dmonstraction of showCountrySelectorBottomSheet
+## Dmonstraction of showCountrySelectorBottomSheet - Flutter Web
 
 !["showCountrySelectorBottomSheet - SelectedLocale.en"](example/demo_gifs/showCountrySelectorBottomSheet.gif)
+
+## Dmonstraction of CountrySelectorWidget - Android
+
+!["Dmonstraction of showCountrySelectorBottomSheet - Android"](example/demo_gifs/android_demo.gif)
+
+## Dmonstraction of CountrySelectorWidget - IOS
+
+!["Dmonstraction of showCountrySelectorBottomSheet - IOS"](example/demo_gifs/ios_demo.gif)
+
+## Dmonstraction of showCountrySelectorBottomSheet - MacOS
+
+!["Dmonstraction of showCountrySelectorBottomSheet - MacOS"](example/demo_gifs/mac_os_demo.gif)
 
 ## MIT License
 

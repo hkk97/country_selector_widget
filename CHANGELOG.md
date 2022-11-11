@@ -5,3 +5,15 @@
 ## 0.0.2
 
 * Update package structure, Add dartdoc comment and Update README.md.
+
+## 0.0.3
+
+* Update pubspec.yaml
+
+## 0.0.4
+
+* Update README.md
+
+## 0.0.5
+
+* Add focusNode and unFocusNode feature, Android and ios Demo
