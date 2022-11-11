@@ -89,21 +89,23 @@ showCountrySelectorBottomSheet(
 
 ## Dmonstraction of CountrySelectorWidget - Flutter Web
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
+!["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
 
 ## Dmonstraction of showCountrySelectorBottomSheet - Flutter Web
 
-!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
+!["showCountrySelectorBottomSheet - SelectedLocale.en"](example/demo_gifs/showCountrySelectorBottomSheet.gif)
+
+## Dmonstraction of CountrySelectorWidget - Android
+
+!["Dmonstraction of showCountrySelectorBottomSheet - Android"](example/demo_gifs/android_demo.gif)
 
 ## Dmonstraction of CountrySelectorWidget - IOS
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/ios_demo.gif?raw=true)
+!["Dmonstraction of showCountrySelectorBottomSheet - IOS"](example/demo_gifs/ios_demo.gif)
 
 ## Dmonstraction of showCountrySelectorBottomSheet - MacOS
 
-!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/mac_os_demo.gif?raw=true)
-
-
+!["Dmonstraction of showCountrySelectorBottomSheet - MacOS"](example/demo_gifs/mac_os_demo.gif)
 
 ## MIT License
 
