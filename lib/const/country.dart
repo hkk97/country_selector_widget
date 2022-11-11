@@ -1,3 +1,4 @@
+// Country object includes all essential info of the country
 class Country {
   final String zhCH;
   final String zhHK;

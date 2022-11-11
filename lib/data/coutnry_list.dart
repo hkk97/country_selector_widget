@@ -1,3 +1,4 @@
+// reference countries' data
 List<Map<String, String>> countriesMap = [
   {
     "zhCH": "阿富汗",
