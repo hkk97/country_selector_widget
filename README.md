@@ -22,22 +22,27 @@ To see examples of the following animations on a device or simulator:
 ```bash
 cd example/
 flutter run
+```
 
 ## Usage
+
 To use this plugin, add `country_selector_widget` as a [dependency in your pubspec.yaml file].
 
 ### Examples
+
 Here are the examples that show you how to use the CountrySelectorWidget and showCountrySelectorBottomSheet.
 
 #### Usage of CountrySelectorWidget
+
 - the default locale is SelectedLocale.en, you would change to SelectedLocale.zhCH or SelectedLocale.zhHK
 - once the country is selected and clicked the continue btn it will trigger the valueChangedCallback called onSelectedCountry and return the Country
+
 ```dart
 CountrySelectorWidget(
     onSelectedCountry: (Country country) async {
         // selected country callback 
     },
-),
+)
 ```
 
 #### Usage of showCountrySelectorBottomSheet

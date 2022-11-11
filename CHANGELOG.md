@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Update pubspec.yaml
+
+## 0.0.4
+
+* Update README.md
