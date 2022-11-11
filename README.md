@@ -95,13 +95,15 @@ showCountrySelectorBottomSheet(
 
 !["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
 
-## Dmonstraction of CountrySelectorWidget - Android
+## Dmonstraction of CountrySelectorWidget - IOS
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
+!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/ios_demo.gif?raw=true)
 
-## Dmonstraction of showCountrySelectorBottomSheet - Android
+## Dmonstraction of showCountrySelectorBottomSheet - MacOS
 
-!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
+!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/mac_os_demo.gif?raw=true)
+
+
 
 ## MIT License
 
