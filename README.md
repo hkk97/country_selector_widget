@@ -57,9 +57,9 @@ showCountrySelectorBottomSheet(
 
 | Parameter | Description |
 |---|---|
-| `customAppBar`* | Sets the Custom AppBar instead of using provided default AppBar  |
+| `customAppBar` | Sets the Custom AppBar instead of using provided default AppBar  |
 | `bottomAppBarHeight` | Sets the height for the bottom `Continue Section` widget |
-| `continueBtnPadding`* | The Padding between the bottom `Continue Section` and `Continue Button` widget |
+| `continueBtnPadding` | The Padding between the bottom `Continue Section` and `Continue Button` widget |
 | `selectedLocale` | Uses to determine the default label with locale, there are three `SelectedLocale`. They are `SelectedLocale.en`, `SelectedLocale.zhCH` and `SelectedLocale.zhHK` |
 | `showSelectedWidget` | Uses to determine wether show the `CountryCardWidget` or not when the country is selected in the ListView |
 | `aniDuration` | Duration of the FadeIn Animation of `CountryCardWidget` |
