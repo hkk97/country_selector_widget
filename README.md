@@ -1,6 +1,6 @@
 # Country Selector Widget
 
-Country Selector Widget written by Dart and Fluter supports three locales with the country's name, achieved lazy loading, and animation FadeIn. This package provides CountrySelectorWidget and showCountrySelectorBottomSheet to fulfill the needed usage.
+Country Selector Widget written by Dart and Flutter supports three locales with the country's name, achieved lazy loading, and animation FadeIn. This package provides CountrySelectorWidget and showCountrySelectorBottomSheet to fulfill the needed usage.
 
 <p align="center">
      <a href="https://github.com/flutter/flutter/tree/3.3.8" alt="Flutter">
