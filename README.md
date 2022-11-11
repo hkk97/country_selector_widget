@@ -89,11 +89,11 @@ showCountrySelectorBottomSheet(
 
 ## Demonstration of CountrySelectorWidget - Flutter Web
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
+!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
 
 ## Demonstration of showCountrySelectorBottomSheet - Flutter Web
 
-!["showCountrySelectorBottomSheet - SelectedLocale.en"](example/demo_gifs/showCountrySelectorBottomSheet.gif)
+!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
 
 ## Demonstration of CountrySelectorWidget - Android
 
