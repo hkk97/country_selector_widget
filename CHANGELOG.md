@@ -21,7 +21,3 @@
 ## 0.0.6
 
 * Update README.md
-
-## 0.0.7
-
-* Update README.md and Solve misspelling
