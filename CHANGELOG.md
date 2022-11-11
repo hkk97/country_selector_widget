@@ -13,3 +13,7 @@
 ## 0.0.4
 
 * Update README.md
+
+## 0.0.5
+
+* Add focusNode and unFocusNode feature, Android and ios Demo

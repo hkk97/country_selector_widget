@@ -87,11 +87,19 @@ showCountrySelectorBottomSheet(
 | `textFieldborderRadius` | Uses to determine borderRadius of `TextField` |
 | `continueBtnRadius` | Uses to determine borderRadius of Continue Button |
 
-## Dmonstraction of CountrySelectorWidget
+## Dmonstraction of CountrySelectorWidget - Flutter Web
 
 !["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
 
-## Dmonstraction of showCountrySelectorBottomSheet
+## Dmonstraction of showCountrySelectorBottomSheet - Flutter Web
+
+!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
+
+## Dmonstraction of CountrySelectorWidget - Android
+
+!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
+
+## Dmonstraction of showCountrySelectorBottomSheet - Android
 
 !["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
 
