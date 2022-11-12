@@ -87,25 +87,25 @@ showCountrySelectorBottomSheet(
 | `textFieldborderRadius` | Uses to determine borderRadius of `TextField` |
 | `continueBtnRadius` | Uses to determine borderRadius of Continue Button |
 
-## Dmonstraction of CountrySelectorWidget - Flutter Web
+## Demonstration of CountrySelectorWidget - Flutter Web
 
 !["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
 
-## Dmonstraction of showCountrySelectorBottomSheet - Flutter Web
+## Demonstration of showCountrySelectorBottomSheet - Flutter Web
 
 !["showCountrySelectorBottomSheet - SelectedLocale.en"](example/demo_gifs/showCountrySelectorBottomSheet.gif)
 
-## Dmonstraction of CountrySelectorWidget - Android
+## Demonstration of CountrySelectorWidget - Android
 
-!["Dmonstraction of showCountrySelectorBottomSheet - Android"](example/demo_gifs/android_demo.gif)
+!["Demonstration of showCountrySelectorBottomSheet - Android"](example/demo_gifs/android_demo.gif)
 
-## Dmonstraction of CountrySelectorWidget - IOS
+## Demonstration of CountrySelectorWidget - IOS
 
-!["Dmonstraction of showCountrySelectorBottomSheet - IOS"](example/demo_gifs/ios_demo.gif)
+!["Demonstration of showCountrySelectorBottomSheet - IOS"](example/demo_gifs/ios_demo.gif)
 
-## Dmonstraction of showCountrySelectorBottomSheet - MacOS
+## Demonstration of showCountrySelectorBottomSheet - MacOS
 
-!["Dmonstraction of showCountrySelectorBottomSheet - MacOS"](example/demo_gifs/mac_os_demo.gif)
+!["Demonstration of showCountrySelectorBottomSheet - MacOS"](example/demo_gifs/mac_os_demo.gif)
 
 ## MIT License
 
