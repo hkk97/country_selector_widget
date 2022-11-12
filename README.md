@@ -62,6 +62,7 @@ showCountrySelectorBottomSheet(
 
 | Parameter | Description |
 |---|---|
+| `refCountryCode` | Sets the default selected country |
 | `customAppBar` | Sets the Custom AppBar instead of using provided default AppBar  |
 | `bottomAppBarHeight` | Sets the height for the bottom `Continue Section` widget |
 | `continueBtnPadding` | The Padding between the bottom `Continue Section` and `Continue Button` widget |

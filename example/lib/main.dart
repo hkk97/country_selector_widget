@@ -98,8 +98,10 @@ class App extends StatelessWidget {
         ],
       ),
       body: CountrySelectorWidget(
-        //  select the Chinese locale to label the text rather than English
+        // select the Chinese locale to label the text rather than English
         selectedLocale: SelectedLocale.zhCH,
+        // set the default selected country
+        refCountryCode: "HK",
         // callback of the selected country
         onSelectedCountry: (country) async {
           // dialog to show the info of the country object
