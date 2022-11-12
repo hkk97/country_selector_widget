@@ -1,6 +1,6 @@
 name: country_selector_widget
 description: Country Selector Widget provides CountrySelectorWidget and showCountrySelectorBottomSheet to fulfill the needed usage.
-version: 0.1.0
+version: 0.1.1
 homepage: https://hkk97.github.io/country_selector_widget/
 
 environment:

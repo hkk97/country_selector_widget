@@ -67,6 +67,8 @@ class App extends StatelessWidget {
               // show country selector bottom sheet widget
               await showCountrySelectorBottomSheet(
                 context: context,
+                // enable dialCode instead of selected circle
+                withDialCode: true,
                 // set the default selected country
                 refCountryCode: "HK",
                 onSelectedCountry: (country) async {

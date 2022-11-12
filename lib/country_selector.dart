@@ -13,6 +13,8 @@ import 'package:country_selector_widget/util/text_util.dart';
 // func to show countryselectorbottom sheet
 Future<void> showCountrySelectorBottomSheet({
   required BuildContext context,
+  // Used to determine whether show the dialCode of country or not
+  bool withDialCode = false,
   // The refCountryCode used to indicate the default selected country
   String? refCountryCode,
   // the height of the bottomsheet
@@ -98,6 +100,7 @@ Future<void> showCountrySelectorBottomSheet({
         height: bottomSheetHeight ?? MediaQuery.of(context).size.height * 0.8,
         child: CountrySelectorWidget(
           customAppBar: customAppBar,
+          withDialCode: withDialCode,
           refCountryCode: refCountryCode,
           bottomAppBarHeight: bottomAppBarHeight,
           continueBtnPadding: continueBtnPadding,
@@ -132,6 +135,8 @@ Future<void> showCountrySelectorBottomSheet({
 }
 
 class CountrySelectorWidget extends StatefulWidget {
+  // Used to determine whether show the dialCode of country or not
+  final bool withDialCode;
   // The refCountryCode used to indicate the default selected country
   final String? refCountryCode;
 // Sets the Custom AppBar instead of using provided default AppBar
@@ -190,6 +195,7 @@ class CountrySelectorWidget extends StatefulWidget {
 
   const CountrySelectorWidget({
     super.key,
+    this.withDialCode = false,
     this.refCountryCode,
     this.customAppBar,
     this.bottomAppBarHeight = 75,
@@ -408,6 +414,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
                                         ),
                                       ),
                                       CountryCardWidget(
+                                        withDialCode: widget.withDialCode,
                                         aniDuration: widget.aniDuration,
                                         selectedColor: widget.selectedCardColor,
                                         selectedLocale: widget.selectedLocale,
@@ -492,6 +499,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
                                                     countries[index];
                                               }
                                             },
+                                            withDialCode: widget.withDialCode,
                                           );
                                         },
                                         childCount: countries.length,
@@ -573,6 +581,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
 
 // the widget used to visualize the country object
 class CountryCardWidget extends StatefulWidget {
+  final bool withDialCode;
   final bool isSelected; // determine whether this widget is selected or not
   final Country country; // country info
   final Color selectedColor; // hightlighted color when widget is selected
@@ -584,6 +593,7 @@ class CountryCardWidget extends StatefulWidget {
   const CountryCardWidget({
     super.key,
     this.isSelected = false,
+    required this.withDialCode,
     required this.country,
     required this.selectedColor,
     required this.aniDuration,
@@ -704,17 +714,29 @@ class CountryCardWidgetState extends State<CountryCardWidget>
                     ),
                   ),
                   Container(
-                    width: 22.5,
-                    height: 22.5,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: widget.isSelected
-                            ? widget.selectedColor
-                            : Colors.grey.shade300,
-                        width: widget.isSelected ? 2 : 1.5,
-                      ),
-                    ),
+                    width: widget.withDialCode ? null : 22.5,
+                    height: widget.withDialCode ? null : 22.5,
+                    decoration: widget.withDialCode
+                        ? null
+                        : BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: widget.isSelected
+                                  ? widget.selectedColor
+                                  : Colors.grey.shade300,
+                              width: widget.isSelected ? 2 : 1.5,
+                            ),
+                          ),
+                    child: widget.withDialCode
+                        ? Text(
+                            widget.country.dialCode,
+                            style: const TextStyle(
+                              color: Colors.grey,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.15,
+                            ),
+                          )
+                        : const SizedBox(),
                   ),
                 ],
               ),
