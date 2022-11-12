@@ -257,7 +257,8 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
     }
     if (widget.refCountryCode != null) {
       List<Country> refCountry = _countries
-          .where((country) => country.code == widget.refCountryCode)
+          .where(
+              (country) => country.code == widget.refCountryCode!.toUpperCase())
           .toList();
       if (refCountry.length == 1) {
         _selectedCountryNotifi.value = refCountry.first;
