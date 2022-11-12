@@ -4,6 +4,7 @@ library country_selector_widget;
 export 'const/enum.dart';
 export 'const/country.dart';
 
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:country_selector_widget/country_selector.dart';
 import 'package:country_selector_widget/data/coutnry_list.dart';
@@ -83,6 +84,7 @@ Future<void> showCountrySelectorBottomSheet({
     ),
   ),
 }) async {
+  // #
   await showModalBottomSheet(
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
@@ -96,6 +98,7 @@ Future<void> showCountrySelectorBottomSheet({
         height: bottomSheetHeight ?? MediaQuery.of(context).size.height * 0.8,
         child: CountrySelectorWidget(
           customAppBar: customAppBar,
+          refCountryCode: refCountryCode,
           bottomAppBarHeight: bottomAppBarHeight,
           continueBtnPadding: continueBtnPadding,
           selectedLocale: selectedLocale,
@@ -235,7 +238,6 @@ class CountrySelectorWidget extends StatefulWidget {
 class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
   late ScrollController _scrollController;
   late List<Country> _countries;
-  late List<double> _widgetHeight;
   late ValueNotifier<List<Country>?> _countriesNotifi;
   late ValueNotifier<Country?> _selectedCountryNotifi;
   late TextUtil _textUtil;
@@ -247,7 +249,6 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
     super.initState();
     _textUtil = TextUtil(selectedLocale: widget.selectedLocale);
     _scrollController = ScrollController();
-    _widgetHeight = [];
     _selectedCountryNotifi = ValueNotifier(null);
     _countries = [];
     _countriesNotifi = ValueNotifier(null);
