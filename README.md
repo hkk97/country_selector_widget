@@ -62,6 +62,7 @@ showCountrySelectorBottomSheet(
 
 | Parameter | Description |
 |---|---|
+| `withDialCode` | Used to determine whether show the dialCode of country or not |
 | `refCountryCode` | Sets the default selected country |
 | `customAppBar` | Sets the Custom AppBar instead of using provided default AppBar  |
 | `bottomAppBarHeight` | Sets the height for the bottom `Continue Section` widget |
@@ -90,11 +91,11 @@ showCountrySelectorBottomSheet(
 
 ## Demonstration of CountrySelectorWidget - Flutter Web
 
-!["CountrySelectorWidget - SelectedLocale.zhCH"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/countrySelectorWidget_demo.gif?raw=true)
+!["CountrySelectorWidget - SelectedLocale.zhCH"](example/demo_gifs/countrySelectorWidget_demo.gif)
 
 ## Demonstration of showCountrySelectorBottomSheet - Flutter Web
 
-!["showCountrySelectorBottomSheet - SelectedLocale.en"](https://github.com/hkk97/country_selector_widget/blob/master/example/demo_gifs/showCountrySelectorBottomSheet.gif?raw=true)
+!["showCountrySelectorBottomSheet - SelectedLocale.en"](example/demo_gifs/showCountrySelectorBottomSheet.gif)
 
 ## Demonstration of CountrySelectorWidget - Android
 
