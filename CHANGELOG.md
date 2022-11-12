@@ -33,3 +33,7 @@
 ## 0.0.9
 
 * Fix refCountryCode issues
+
+## 0.1.0
+
+* Fix refCountryCode issues in showCountrySelectorBottomSheet
