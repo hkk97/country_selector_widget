@@ -12,6 +12,8 @@ import 'package:country_selector_widget/util/text_util.dart';
 // func to show countryselectorbottom sheet
 Future<void> showCountrySelectorBottomSheet({
   required BuildContext context,
+  // The refCountryCode used to indicate the default selected country
+  String? refCountryCode,
   // the height of the bottomsheet
   double? bottomSheetHeight,
   // the radius of the top left and top right corner
@@ -127,6 +129,8 @@ Future<void> showCountrySelectorBottomSheet({
 }
 
 class CountrySelectorWidget extends StatefulWidget {
+  // The refCountryCode used to indicate the default selected country
+  final String? refCountryCode;
 // Sets the Custom AppBar instead of using provided default AppBar
   final PreferredSizeWidget? customAppBar;
   // Sets the height for the bottom `Continue Section` widget
@@ -183,6 +187,7 @@ class CountrySelectorWidget extends StatefulWidget {
 
   const CountrySelectorWidget({
     super.key,
+    this.refCountryCode,
     this.customAppBar,
     this.bottomAppBarHeight = 75,
     this.continueBtnPadding = const EdgeInsets.symmetric(vertical: 13.5),
@@ -230,6 +235,7 @@ class CountrySelectorWidget extends StatefulWidget {
 class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
   late ScrollController _scrollController;
   late List<Country> _countries;
+  late List<double> _widgetHeight;
   late ValueNotifier<List<Country>?> _countriesNotifi;
   late ValueNotifier<Country?> _selectedCountryNotifi;
   late TextUtil _textUtil;
@@ -241,6 +247,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
     super.initState();
     _textUtil = TextUtil(selectedLocale: widget.selectedLocale);
     _scrollController = ScrollController();
+    _widgetHeight = [];
     _selectedCountryNotifi = ValueNotifier(null);
     _countries = [];
     _countriesNotifi = ValueNotifier(null);
@@ -248,12 +255,30 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
       final country = Country.fromJson(countriesMap[i]);
       _countries.add(country);
     }
+    if (widget.refCountryCode != null) {
+      List<Country> refCountry = _countries
+          .where((country) => country.code == widget.refCountryCode)
+          .toList();
+      if (refCountry.length == 1) {
+        _selectedCountryNotifi.value = refCountry.first;
+      } else {
+        throw ("refCountry does not valid in CountryCode");
+      }
+    }
     _countriesNotifi.value = _countries;
     _focusNode = FocusNode();
     _focusNotifi = ValueNotifier(false);
     _focusNode.addListener(() {
       _focusNotifi.value = _focusNode.hasFocus;
     });
+    WidgetsBinding.instance.addPostFrameCallback(
+      (_) {
+        if (_selectedCountryNotifi.value != null) {
+          final index = _countries.indexOf(_selectedCountryNotifi.value!);
+          _scrollController.jumpTo(64.5 * index);
+        }
+      },
+    );
   }
 
   @override
