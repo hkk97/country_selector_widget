@@ -67,7 +67,8 @@ class App extends StatelessWidget {
               // show country selector bottom sheet widget
               await showCountrySelectorBottomSheet(
                 context: context,
-                // callback of the selected country
+                // set the default selected country
+                refCountryCode: "HK",
                 onSelectedCountry: (country) async {
                   // dialog to show the info of the country object
                   await showSuccessDialog(
