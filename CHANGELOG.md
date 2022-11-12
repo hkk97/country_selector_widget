@@ -37,3 +37,7 @@
 ## 0.1.0
 
 * Fix refCountryCode issues in showCountrySelectorBottomSheet
+
+## 0.1.1
+
+* Add withDialCode feature

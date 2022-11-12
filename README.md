@@ -62,6 +62,7 @@ showCountrySelectorBottomSheet(
 
 | Parameter | Description |
 |---|---|
+| `withDialCode` | Used to determine whether show the dialCode of country or not |
 | `refCountryCode` | Sets the default selected country |
 | `customAppBar` | Sets the Custom AppBar instead of using provided default AppBar  |
 | `bottomAppBarHeight` | Sets the height for the bottom `Continue Section` widget |
