@@ -5,6 +5,7 @@ export 'const/enum.dart';
 export 'const/country.dart';
 
 import 'dart:async';
+import 'package:after_layout/after_layout.dart';
 import 'package:flutter/material.dart';
 import 'package:country_selector_widget/country_selector.dart';
 import 'package:country_selector_widget/data/coutnry_list.dart';
@@ -13,6 +14,8 @@ import 'package:country_selector_widget/util/text_util.dart';
 // func to show countryselectorbottom sheet
 Future<void> showCountrySelectorBottomSheet({
   required BuildContext context,
+  required Function onBuilded,
+  required Function onClosed,
   // Used to determine whether show the dialCode of country or not
   bool withDialCode = false,
   // The refCountryCode used to indicate the default selected country
@@ -99,6 +102,7 @@ Future<void> showCountrySelectorBottomSheet({
       child: SizedBox(
         height: bottomSheetHeight ?? MediaQuery.of(context).size.height * 0.8,
         child: CountrySelectorWidget(
+          onBuilded: onBuilded,
           customAppBar: customAppBar,
           withDialCode: withDialCode,
           refCountryCode: refCountryCode,
@@ -110,6 +114,7 @@ Future<void> showCountrySelectorBottomSheet({
           onSelectedCountry: (country) {
             Navigator.pop(context);
             onSelectedCountry(country);
+            onClosed();
           },
           appBarText: appBarText,
           searchText: searchText,
@@ -135,6 +140,8 @@ Future<void> showCountrySelectorBottomSheet({
 }
 
 class CountrySelectorWidget extends StatefulWidget {
+  final Function onBuilded;
+
   // Used to determine whether show the dialCode of country or not
   final bool withDialCode;
   // The refCountryCode used to indicate the default selected country
@@ -195,6 +202,7 @@ class CountrySelectorWidget extends StatefulWidget {
 
   const CountrySelectorWidget({
     super.key,
+    required this.onBuilded,
     this.withDialCode = false,
     this.refCountryCode,
     this.customAppBar,
@@ -241,7 +249,7 @@ class CountrySelectorWidget extends StatefulWidget {
   CountrySelectorWidgetState createState() => CountrySelectorWidgetState();
 }
 
-class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
+class CountrySelectorWidgetState extends State<CountrySelectorWidget> with AfterLayoutMixin{
   late ScrollController _scrollController;
   late List<Country> _countries;
   late ValueNotifier<List<Country>?> _countriesNotifi;
@@ -576,6 +584,11 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> {
         ),
       ),
     );
+  }
+  
+  @override
+  FutureOr<void> afterFirstLayout(BuildContext context) {
+    widget.onBuilded();
   }
 }
 
