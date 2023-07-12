@@ -317,6 +317,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> with After
           appBar: widget.customAppBar ??
               AppBar(
                 backgroundColor: Colors.white,
+                surfaceTintColor: Colors.white,
                 elevation: 0.0,
                 centerTitle: true,
                 title: Text(
@@ -666,6 +667,7 @@ class CountryCardWidgetState extends State<CountryCardWidget>
           onTap: () => widget.onClickSelected(),
           child: Card(
             color: Colors.white,
+            surfaceTintColor: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: const BorderRadius.all(
                 Radius.circular(
