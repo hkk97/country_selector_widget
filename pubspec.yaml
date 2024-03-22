@@ -4,7 +4,7 @@ version: 0.1.2
 homepage: https://hkk97.github.io/country_selector_widget/
 
 environment:
-  sdk: '>=2.18.4 <3.0.0'
+  sdk: '>=2.18.4 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
