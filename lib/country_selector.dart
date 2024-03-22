@@ -249,7 +249,8 @@ class CountrySelectorWidget extends StatefulWidget {
   CountrySelectorWidgetState createState() => CountrySelectorWidgetState();
 }
 
-class CountrySelectorWidgetState extends State<CountrySelectorWidget> with AfterLayoutMixin{
+class CountrySelectorWidgetState extends State<CountrySelectorWidget>
+    with AfterLayoutMixin {
   late ScrollController _scrollController;
   late List<Country> _countries;
   late ValueNotifier<List<Country>?> _countriesNotifi;
@@ -360,6 +361,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> with After
                         filled: true,
                         hintText:
                             widget.searchText ?? _textUtil.searchStr() ?? "",
+                        fillColor: Colors.white,
                         prefixIcon: const Icon(
                           Icons.search,
                           color: Colors.grey,
@@ -586,7 +588,7 @@ class CountrySelectorWidgetState extends State<CountrySelectorWidget> with After
       ),
     );
   }
-  
+
   @override
   FutureOr<void> afterFirstLayout(BuildContext context) {
     widget.onBuilded();
