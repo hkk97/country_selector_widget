@@ -77,7 +77,7 @@ class App extends StatelessWidget {
                     context,
                     country,
                   );
-                },
+                }, onBuilded: (){}, onClosed: (){},
               );
             },
             child: Center(
@@ -112,7 +112,7 @@ class App extends StatelessWidget {
             context,
             country,
           );
-        },
+        }, onBuilded: (){},
       ),
     );
   }
