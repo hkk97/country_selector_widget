@@ -41,3 +41,7 @@
 ## 0.1.1
 
 * Add withDialCode feature
+
+## 0.1.2
+
+* Set Search TextField fillColor to white
